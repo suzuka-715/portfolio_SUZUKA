@@ -47,3 +47,119 @@ img {
   vertical-align: bottom;
   border: none;
 }
+
+/*------SUZUKA DESIGN portfolio----------*/
+
+/*共通*/
+h2 {
+  font-family: "Yeseva One", cursive;
+  color: #132853;
+}
+
+.header__wrap {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 7%;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  width: 110px;
+}
+
+.pc__nav ul {
+  display: flex;
+}
+
+.pc__nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  color: #333;
+  font-weight: medium;
+  font-size: 18px;
+  text-align: center;
+}
+
+.sp__btn,
+.sp__nav {
+  display: none;
+}
+
+.header__img {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header__img img {
+  width: 1200px;
+  height: 520px;
+  object-fit: cover;
+}
+
+.header_title {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-100%) translateX(-50%);
+  letter-spacing: 0.08em;
+  width: 100%;
+}
+
+.header_title p {
+  font-family: "Yeseva One", cursive;
+  font-size: 33px;
+  color: #fff;
+  text-shadow: 3px 3px 5px #808080;
+}
+
+header {
+  margin-bottom: 120px;
+}
+
+/*main*/
+
+/*about*/
+.about {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px 0 60px;
+}
+
+.about__img {
+  width: 53%;
+}
+
+.about__desc img {
+  transform: translateY(-40%) translateX(-20%);
+}
+
+.about__desc h2 {
+  font-size: 80px;
+  letter-spacing: 0.3em;
+  padding-bottom: 50px;
+}
+
+.about__desc h3 {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  line-height: 2rem;
+  padding-bottom: 50px;
+}
+
+.about__desc p {
+  font-size: 16px;
+  letter-spacing: 0.25em;
+  line-height: 1.75rem;
+}
+
+/*about ボタン*/
