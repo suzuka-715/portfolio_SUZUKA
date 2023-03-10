@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webデザイナー | SUZUKA DESIGN portfolio </title>
     <meta name="description" content="SUZUKA DESIGNのポートフォリオサイトです。">
+
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -138,14 +145,27 @@
                 <p>クリエイティブなだけじゃない。<br>伝えたい想いをまっすぐ<br>人々がつながるデザインを。</p>
             </div>
 
+            <div class="works__content">
+                <div class="works__slider">
+                    <div class="slick-img"><img src="images/works01.jpg" alt="LIFE hair salonのLP"></div>
+                    <div class="slick-img"><img src="images/works02.jpg" alt="SUZUKA DESIGNのポートフォリオサイト"></div>
+                    <div class="slick-img"><img src="images/works05.jpg" alt="旅行メディアのバナー"></div>
+                    <div class="slick-img"><img src="images/works03.jpg" alt="DESIGN CAFEのLP"></div>
+                    <div class="slick-img"><img src="images/works04.jpg" alt="新作バーガーのバナー"></div>
 
+                </div>
+            </div>
 
+            <div class="slider_arrow_prev"></div>
+            <div class="slider_arrow_next"></div>
 
+        </section>
 
+        <section class="ten-things">
+            <!-- <a href="about.html"><img src="images/main_10.png" alt="10 things SUZUKA likes"></a> -->
+        </section>
 
-
-
-
+        <section class="contact">
 
         </section>
 
@@ -156,8 +176,33 @@
 
     </footer>
 
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
 
 
+            $('.works__slider').slick({
+                autoplay: false,
+                dots: true,
+                centerMode: true,
+                autoplaySpeed: 3000,
+                centerPadding: '0px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
+
+        });
+    </script>
 </body>
 
 </html>
