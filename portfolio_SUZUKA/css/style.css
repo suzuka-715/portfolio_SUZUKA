@@ -25,6 +25,10 @@ li {
   background: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   /*下線を消す*/
   text-decoration: none;
@@ -32,10 +36,6 @@ a {
 
   color: inherit;
   transition: 0.3s;
-}
-
-a:hover {
-  opacity: 0.5;
 }
 
 ul {
@@ -49,6 +49,10 @@ img {
   border: none;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 /*------SUZUKA DESIGN portfolio----------*/
 
 /*共通*/
@@ -59,13 +63,20 @@ h2 {
 
 /*header*/
 
+.header {
+  width: 100%;
+}
+
 .header__wrap {
   position: sticky;
+  top: 0;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 20px 7%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
@@ -73,23 +84,56 @@ h2 {
   width: 110px;
 }
 
+.header__logo img:hover {
+  opacity: 0.7;
+}
+
+/*グローバルナビ*/
 .pc__nav ul {
   display: flex;
 }
 
 .pc__nav ul li {
   width: 105px;
-  margin-left: 55px;
+  margin-left: 30px;
   color: #333;
   font-weight: 500;
   font-size: 18px;
-  text-align: center;
+  text-align: end;
+}
+
+.pc__nav li a {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.pc__nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.pc__nav li a:hover::after {
+  transform: scale(1, 1);
 }
 
 .sp__btn,
 .sp__nav {
   display: none;
 }
+
+.pc__nav li a:hover {
+  opacity: inherit;
+}
+
+/* グローバルナビ ここまで*/
 
 .header__img {
   text-align: center;
@@ -220,7 +264,7 @@ header {
 }
 
 .skills__desc img {
-  width: 230px;
+  width: 240px;
   background: rgb(255, 255, 255);
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -230,6 +274,8 @@ header {
 .skills__desc h4 {
   text-align: center;
   font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: 20px 0 10px;
   /*border-bottom: 1px solid #333; */
 }
 
@@ -253,7 +299,7 @@ header {
 
 /*works*/
 .works {
-  margin: 0 auto 120px;
+  margin: 0 auto 140px;
 }
 
 .works h2,
@@ -296,7 +342,7 @@ header {
 }
 
 .slick-img img {
-  transform: scale(0.8);
+  transform: scale(0.85);
 }
 
 .works__slider .slick-center img {
@@ -359,4 +405,137 @@ header {
 
 .slick-dots li button:before {
   margin-top: 20px !important;
+}
+
+/*contact */
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact__ttl {
+  text-align: center;
+}
+
+.contact__ttl h2 {
+  font-size: 80px;
+  letter-spacing: 0.2em;
+  margin-bottom: -40px;
+}
+
+.contact__ttl img {
+  color: #333;
+  width: 220px;
+  margin-bottom: -50px;
+  margin-left: -400px;
+}
+
+.contact__info {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contact__btn {
+  background-color: #f2f2f2;
+  padding-top: 70px;
+}
+
+.contact__info p {
+  background-color: #f2f2f2;
+  text-align: center;
+  letter-spacing: 0.3em;
+  line-height: 1.87rem;
+  padding: 30px 0 40px;
+}
+
+/*お問い合わせボタン*/
+
+.contact__btn a {
+  border: 1.5px solid #808080;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 20px 20px 20px 16px;
+  color: #333;
+  letter-spacing: 0.2em;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.contact__btn a:hover {
+  opacity: inherit;
+  background: #fff;
+  color: #333;
+}
+
+.contact__btn a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-70%);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+/*
+.contact__btn a:hover:after {
+  border-color: #fff;
+}*/
+
+/* footer */
+.footer {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.footer__logo {
+  width: 130px;
+  margin: 0 auto 40px;
+}
+
+.footer__logo img {
+  padding-right: 15px;
+}
+
+.footer__info {
+  display: flex;
+  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #808080;
+  letter-spacing: 0.05em;
+}
+
+.footer__item img {
+  width: 23px;
+  height: 23px;
+  box-sizing: border-box;
+}
+
+.footer__item {
+  display: flex;
+}
+
+.footer__item p {
+  color: #333;
+  margin-top: 3px;
+  margin-right: 18px;
+}
+
+.footer__item img {
+  margin: 0 8px;
 }

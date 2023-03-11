@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-3/css/5-3-3.css">
 
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -19,7 +23,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
+
 
 <body>
 
@@ -161,18 +167,84 @@
 
         </section>
 
+
+
         <section class="ten-things">
             <!-- <a href="about.html"><img src="images/main_10.png" alt="10 things SUZUKA likes"></a> -->
         </section>
 
-        <section class="contact">
+
+
+        <section class="contact" id="contact">
+
+            <div class="contact__ttl">
+                <img src="images/SVG/contact_text.svg" alt="Contact with me">
+                <h2>CONTACT</h2>
+            </div>
+
+            <div class="contact__info">
+
+                <div class="contact__btn">
+                    <a href="contact.html">お問い合わせはこちら</a>
+                </div>
+                <p>お仕事のご依頼や、ご相談<br>その他デザイン以外のお仕事もぜひ！<br>お問い合わせお待ちしております。</p>
+
+            </div>
+
 
         </section>
 
 
+
     </main>
 
-    <footer>
+    <footer class="footer">
+
+        <div class="footer__logo">
+            <a href="index.html"><img src="images/SVG/main_logo_pc.svg" alt="SUZUKA DESIGN"></a>
+        </div>
+
+        <div class="footer__info">
+
+            <a href="https://www.instagram.com/suu___z.design/">
+                <div class="footer__item">
+                    <div>
+                        <img src="images/instagram_icon.svg" class="footer_item" alt="Instagram">
+                    </div>
+
+                    <div>
+                        <p>| Instagram</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="http://note.com/suzuka_koshihara">
+                <div class="footer__item">
+
+                    <div>
+                        <img src="images/note_icon.svg" alt="note">
+                    </div>
+                    <div>
+                        <p>| note</p>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/%E6%B6%BC%E9%A6%99-%E8%B6%8A%E5%8E%9F-44b9a6265/">
+                <div class="footer__item">
+                    <div>
+                        <img src="images/linkedin_icon.svg" alt="LinkedIn">
+                    </div>
+                    <div>
+                        <p>| LinkedIn</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <p>©SUZUKA DESIGN All rights reserved</p>
 
     </footer>
 
@@ -193,7 +265,7 @@
                 slidesToShow: 3,
                 responsive: [
                     {
-                        breakpoint: 767,
+                        breakpoint: 1100,
                         settings: {
                             slidesToShow: 1,
                         },
