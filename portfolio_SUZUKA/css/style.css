@@ -68,16 +68,15 @@ h2 {
 }
 
 .header__wrap {
-  position: sticky;
-  top: 0;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  height: 90px;
   margin: 0 auto;
-  padding: 20px 0;
   box-sizing: border-box;
+  z-index: 999;
 }
 
 .header__logo {
@@ -91,6 +90,7 @@ h2 {
 /*グローバルナビ*/
 .pc__nav ul {
   display: flex;
+  align-items: center;
 }
 
 .pc__nav ul li {
@@ -162,6 +162,7 @@ h2 {
   color: #fff;
   background-color: transparent;
   text-shadow: 3px 3px 5px #808080;
+  z-index: 998;
 }
 
 header {
