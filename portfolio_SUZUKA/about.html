@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUZUKA DESIGN | about </title>
+    <title>SUZUKA DESIGN | ABOUT </title>
     <meta name="description" content="webデザイナー SUZUKAについて。">
 
-    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
@@ -16,9 +16,140 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
+<body>
+
+
+
+
+
+
+
+
+    <header id="header">
+
+        <div class="header__bar">
+            <div class="header__wrap">
+
+
+                <h1 class="header__logo" id="home">
+                    <a link rel="home" href="index.html"><img src="images/SVG/main_logo_pc.svg" alt="SUZUKA DESIGN"></a>
+                </h1>
+
+                <nav class="pc__nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="sp__btn">
+                    <span></span>
+                </div>
+
+                <nav class="sp__nav">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section div class="mv__top">
+
+            <div class="mv__title-about">
+                <h2>ABOUT</h2>
+            </div>
+
+            <div class="mv__img-about">
+                <img src="images/about_fv.jpg" alt="SUZUKA">
+            </div>
+
+
+
+            <div class="about__history">
+
+                <p>越原 涼香| Suzuka Koshihara</p>
+                <p>2000年7月15日生まれ。埼玉県春日部市出身<br>2023年3月 共立女子大学文芸学部を卒業</p>
+
+                <p>大学では英文コースに所属し、<br>おもにイギリス文学を研究するゼミで<br>卒業論文を執筆。</p>
+                <p>在学中に2社での長期インターンを経験した後、<br>より多くの人々がつながるきっかけを創りたいと<br>webデザイナーを目指してスクールに通い始める。</p>
+
+            </div>
+
+        </section>
+
+        <section class="vision">
+
+            <div class="vision__ttl">
+                <!-- <img src="" alt=""> -->
+                <h2>VISION</h2>
+                <h3>なぜwebデザイナー？</h3>
+            </div>
+
+            <div class="vision__desc">
+
+                <div class="vision__desc-top">
+                    <p>クリエイティブな仕事で<br>
+                        困っている人々を助けたい。
+                    </p>
+                </div>
+
+                <p>ビジネスでもプライベートでもデジタルが不可欠な現代社会で、<br>
+                    様々な業界・業種の方とお仕事がしたいと考えるように。<br>
+                    お客様のお悩みをクリエイティブで解決し、素晴らしいサービスを届くべき人のもとへ。
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <script>
+        $(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.header__bar').css('opacity', 0.8);
+                } else {
+                    $('.header__bar').css('opacity', 1);
+                }
+            });
+
+        });
+    </script>
+</body>
 
 </html>

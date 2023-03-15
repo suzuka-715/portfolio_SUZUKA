@@ -1,64 +1,12 @@
 @charset "utf-8";
 
-/* cssリセット */
-
-/*利用するタグによってこちらの内容は増やす*/
-
-html,
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #333;
-  font-family: "Noto Sans JP", sans-serif;
-  font-feature-settings: "palt";
-  background: #fff;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  /*下線を消す*/
-  text-decoration: none;
-  /*色を消す*/
-
-  color: inherit;
-  transition: 0.3s;
-}
-
-ul {
-  /*左の「・」を消す*/
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
 /*------SUZUKA DESIGN portfolio----------*/
 
 /*共通*/
 h2 {
   font-family: "Yeseva One", cursive;
   color: #132853;
+  text-align: center;
 }
 
 /*header*/
@@ -67,8 +15,17 @@ h2 {
   width: 100%;
 }
 
-.header__wrap {
+/*グローバルナビ*/
+.header__bar {
   background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.header__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,7 +33,6 @@ h2 {
   height: 90px;
   margin: 0 auto;
   box-sizing: border-box;
-  z-index: 999;
 }
 
 .header__logo {
@@ -87,7 +43,6 @@ h2 {
   opacity: 0.7;
 }
 
-/*グローバルナビ*/
 .pc__nav ul {
   display: flex;
   align-items: center;
@@ -137,13 +92,14 @@ h2 {
 
 .header__img {
   text-align: center;
-  box-sizing: border-box;
 }
 
 .header__img img {
+  margin-top: 90px;
   width: 1200px;
   height: 520px;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 .header__title {
@@ -151,7 +107,7 @@ h2 {
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translateY(-110%) translateX(-50%);
+  transform: translateY(-120%) translateX(-50%);
   letter-spacing: 0.08em;
   width: 100%;
 }
@@ -243,8 +199,9 @@ header {
 }
 
 .skills__ttl h3,
-.works__ttl h3 {
-  color: #132853;
+.works__ttl h3,
+.vision__ttl h3 {
+  color: #6e7a95;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.3em;
@@ -305,8 +262,10 @@ header {
 
 .works h2,
 .works__ttl h3,
-.works__ttl p {
+.works__ttl p,
+.vision__ttl h3 {
   background: #fff;
+  text-align: center;
 }
 
 .works h2 {
@@ -539,4 +498,87 @@ header {
 
 .footer__item img {
   margin: 0 8px;
+}
+
+/* ABOUT */
+
+.mv__top {
+  margin-top: -30px;
+  margin-bottom: 80px;
+}
+
+.mv__title-about {
+  margin-top: 90px;
+  position: relative;
+  z-index: 990;
+  text-align: center;
+}
+
+.mv__title-about h2,
+.vision__ttl h2 {
+  background-color: transparent;
+  font-size: 80px;
+  letter-spacing: 0.3em;
+}
+
+.mv__img-about {
+  text-align: center;
+  position: relative;
+  z-index: 980;
+  margin-top: -40px;
+}
+
+.mv__img-about img {
+  width: 850px;
+  height: 450px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.about__history {
+  max-width: 450px;
+  background-color: rgb(242, 242, 242, 0.6);
+  position: relative;
+  z-index: 985;
+  margin: -40px 15% 0 auto;
+  padding: 30px 20px;
+}
+
+.about__history p {
+  background-color: rgb(242, 242, 242, 0);
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  line-height: 1.73rem;
+  padding: 7px 0;
+}
+
+/* VISION */
+
+.vision {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+}
+
+.vision__ttl h2 {
+  margin-bottom: 30px;
+}
+
+.vision__ttl h3 {
+  padding-bottom: 50px;
+}
+
+.vision__desc p {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  line-height: 2.5rem;
+}
+
+.vision__desc-top p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  letter-spacing: 0.23em;
+  line-height: 2.3rem;
+
+  /*エフェクト候補: マウスオーバーをすると波が広がるデザインにする？*/
 }
