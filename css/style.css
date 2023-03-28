@@ -1367,7 +1367,7 @@ textarea {
 
   .header__title p {
     font-size: 25px;
-    line-height: 3rem;
+    line-height: 5rem;
   }
   /*index メイン*/
 
@@ -1680,6 +1680,7 @@ textarea {
 
   .detail {
     max-width: 330px;
+    margin-bottom: 80px;
   }
 
   .detail__mv img {
@@ -1688,6 +1689,7 @@ textarea {
 
   .detail__ttl h2 {
     font-size: 18px;
+    line-height: 2rem;
   }
 
   .detail__content h3 {
@@ -1726,7 +1728,7 @@ textarea {
   }
 
   textarea {
-    width: 270px;
+    width: 240px;
   }
   .contact__form img {
     width: 140px;
