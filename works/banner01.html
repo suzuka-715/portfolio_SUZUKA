@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SUZUKA DESIGN | 作品実績</title>
+    <meta name="description" content="SUZUKA DESIGNのポートフォリオサイトです。">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-3/css/5-3-3.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="header__bar">
+            <div class="header__wrap">
+
+
+                <h1 class="header__logo" id="home">
+                    <a href="index.html"><img src="../images/main_logo_pc.svg" alt="SUZUKA DESIGN"></a>
+                </h1>
+
+                <nav class="pc__nav">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../about.html">ABOUT</a></li>
+                        <li><a href="../works.html">WORKS</a></li>
+                        <li><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="sp__btn">
+                    <span></span>
+                </div>
+
+                <nav class="sp__nav">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../about.html">ABOUT</a></li>
+                        <li><a href="../works.html">WORKS</a></li>
+                        <li><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="detail">
+
+            <div class="detail__mv">
+                <img src="../images/banner_01.jpg" alt="TOKYO特集のバナー">
+            </div>
+
+            <div class="detail__ttl">
+                <h2>ツアーサイト <br class="sp__br"> 「TOKYO特集」 (架空)</h2>
+                <p>Banner Design</p>
+            </div>
+
+            <div class="detail__content">
+                <h3>制作概要</h3>
+                <p>観光メディアを運営するサイトにて、期間限定として「TOKYO特集」を公開する為の告知バナー。興味を持ってもらい、サイトへのアクセスを目的とする。</p>
+
+                <h3>制作ポイント</h3>
+                <p>様々なブルーを配置する事によって、統一感をもたせ東京の要素がわかる写真を効果的に配置し、メインメッセージが一番目立つ配色になっている。</p>
+            </div>
+
+            <div class="detail__footer">
+                <p>担当領域 : トレース/ 素材の選定/ 加工<br>使用ツール : Photoshop</p>
+            </div>
+
+            <div class="detail__img sp__only">
+                <img src="../images/banner_01_sp.jpg" alt="TOKYO特集のバナー">
+            </div>
+
+            <a class="detail__btn" href="../works.html">back to index</a>
+
+
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer__logo">
+            <a href="../index.html"><img src="../images/main_logo_pc.svg" alt="SUZUKA DESIGN"></a>
+        </div>
+
+        <div class="footer__info">
+
+            <a href="https://www.instagram.com/suu___z.design/" target="_blank">
+                <div class="footer__item">
+                    <img src="../images/instagram_icon.svg" class="footer_item" alt="Instagram">
+                    <p class="pc__only">| Instagram</p>
+                </div>
+            </a>
+
+            <a href="http://note.com/suzuka_koshihara" target="_blank">
+                <div class="footer__item">
+                    <img src="../images/note_icon.svg" alt="note">
+                    <p class="pc__only">| note</p>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/%E6%B6%BC%E9%A6%99-%E8%B6%8A%E5%8E%9F-44b9a6265/" target="_blank">
+                <div class="footer__item">
+                    <img src="../images/linkedin_icon.svg" alt="LinkedIn">
+                    <p class="pc__only">| LinkedIn</p>
+                </div>
+            </a>
+
+        </div>
+
+        <p>©2023 SUZUKA DESIGN <span class="pc__only">All rights reserved.</span></p>
+
+    </footer>
+
+    <script>
+        $(function () {
+
+            $('.sp__btn, .sp__nav li').on('click', function () {
+                $('.sp__btn').toggleClass('open');
+                $('.sp__nav').fadeToggle();
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.header__bar').css('opacity', 0.8);
+                } else {
+                    $('.header__bar').css('opacity', 1);
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
